@@ -1,0 +1,72 @@
+body
+{
+    width:600px;
+}
+body *
+{
+    border: 2px solid black;
+}
+
+
+nav
+{
+    background-color:lavender;
+}
+
+header
+{
+    background-color:lightcoral;
+}
+
+article
+{
+    background-color:lightyellow;
+    height:180px;
+}
+
+footer
+{
+   background-color: gray;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+    text-align: center;
+}
+.top{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+nav{
+    flex-basis: 20%;
+}
+header{
+    flex-basis: 80%;
+}
+
+main{
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;
+    justify-content: space-between;
+    align-content: stretch;
+    height: 400px;
+}
+
+article{
+    flex-grow: 1;
+    flex-basis: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+#a3{
+    width: 20%;
+}

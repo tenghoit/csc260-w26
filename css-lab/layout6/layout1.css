@@ -1,0 +1,67 @@
+body
+{
+    width:600px;
+}
+body *
+{
+    border: 2px solid black;
+}
+
+
+nav
+{
+    background-color:lavender;
+}
+
+header
+{
+    background-color:lightcoral;
+}
+
+article
+{
+    background-color:lightyellow;
+    height:180px;
+}
+
+footer
+{
+   background-color: gray;
+}
+
+body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+    text-align: center;
+}
+
+nav{
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    width: 10%;
+    height: 300px;
+}
+
+body > *:not(nav){
+    position: relative;
+    left: 100px;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+article{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
