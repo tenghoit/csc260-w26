@@ -33,7 +33,7 @@ body{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
-    align-items: stretch;
+    align-content: flex-end;
     padding: 0.5rem;
     border: 0.1rem solid black;
     text-align: center;
@@ -47,15 +47,15 @@ nav{
     height: 300px;
 }
 
-body > *:not(nav){
-    position: relative;
-    left: 100px;
+header{
+    width: 100%;
 }
 
 main{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
+    width: 80%;
 }
 
 article{
@@ -64,4 +64,11 @@ article{
     justify-content: center;
     align-items: center;
     margin: 0.5rem;
+}
+
+footer{
+    margin: 0.5rem;
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
